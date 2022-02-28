@@ -41,6 +41,10 @@ public class PackageValidator {
 	 * @return
 	 */
 	public boolean validateItemsToBeAddingToThePackage(Set<Integer> keySett) {
+		/**
+		 * If more than 15.That's it we will not add more .
+		 * We could make this number configurable in our application
+		 */
 		if (keySett.size() >= 15) {
 			return false;
 		}
